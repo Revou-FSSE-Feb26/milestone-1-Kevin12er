@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.navbar {
+    margin: 30px;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-left: 150px;
+}
+
+.nav-li ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding-right: 100px;
+}
+
+a {
+    color: black;
+}
+
+.main-section   {
+    margin: 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sec-image img {
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.top-text {
+    font-size: 26px;
+}
+
+.text-pgh {
+    padding-top: 10px;
+}
+
+.section-logo {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    padding-top: 350px;
+}
+
+/* ----- Article Start */
+h2 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 25px;
+}
+
+.porto {
+    background-color: black;
+    color: white;
+    margin: 30px 125px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.porto-link a{
+    color: orange;
+    text-decoration: underline;
+}
+
+.textarticle-wrapper {
+    margin-left: 125px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.top-wrapper {
+    margin: 30px 125px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.box img {
+    width: 290px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.middle-logo {
+    margin-top: 130px;
+    margin-left: 125px;
+}
+
+.middle-wrapper {
+    margin: 30px 125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bottom-wrapper {
+    margin: 50px 125px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.content-right {
+    margin-right: 23px;
+    display: grid;
+    row-gap: 10px;
+}
+
+.content-right div:last-child p {
+    border-bottom: none;
+}
+
+.bot-text p {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Footer start */
+
+.footer-container {
+    margin: 30px 125px;
+    font-family: "Times New Roman", sans-serif;
+    padding-top: 50px;
+    border-top: 1.5px solid black;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.footer-hooks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pages ul li a{
+    font-size: 16px;
+}
+
+.contact ul li a {
+    font-size: 16px;
+}
+
+.last-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.nav-right ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-right ul li a {
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Footer end */
+
+
+/* ==================== Media Queries ===================== */
+
+@media (max-width: 630px) {
+    .logo {
+        padding-left: 0;
+        margin: 20px;
+    }
+
+    .nav-li ul {
+        padding-right: 0;
+        font-size: 11px;
+    }
+
+    .nav-li ul li:first-child {
+        display: none;
+    }
+
+    .main-section {
+        flex-direction: column;
+        /* gap: 15px; */
+    }
+
+    .sec-image img {
+        width: 600px;
+        height: 700px;
+    }
+
+    .content-wrapper {
+        padding-top: 0px;
+        margin-left: 20px;
+    }
+
+    .porto {
+        margin: 20px 60px 30px;
+    }
+
+    .textarticle-wrapper {
+        margin-left: 60px;
+    }
+
+    .top-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .box img {
+        width: 470px;
+        height: 300px;
+    }
+
+    .middle-logo {
+        margin-left: 60px;
+    }
+
+    .middle-wrapper {
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bottom-wrapper {
+        margin-left: 60px;
+        gap: 40px;
+    }
+
+    .footer-container {
+        margin-left: 60px;
+    } 
+
+    .last-footer {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* ============== Media Queries End ===================== */
+
+
+
