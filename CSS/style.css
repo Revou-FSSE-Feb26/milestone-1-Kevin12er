@@ -156,6 +156,7 @@ figure img {
   transition: transform 0.2s;
 }
 
+
 figure img:hover {
   transform: translateY(-10px);
 }
@@ -202,11 +203,7 @@ figure img:hover {
   transition: transform 0.2s;
 }
 
-.btn-hover {
-  transform: translateY(-5px);
-  background-color: var(--color-text-secondary);
-  color: var(--bg-wrapper);
-}
+
 
 /*=============== Media Queries (Tablet & Mobile) ===============*/
 

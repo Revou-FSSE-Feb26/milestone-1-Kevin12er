@@ -27,6 +27,8 @@ industry. This website designed with clean,structured, and semantic hierarcy. Ad
 | Max-Width: 1023px | Tablet |
 | Min-Width: 1024px | Desktop |
 
+----
+
 ### Screenshot of Responsiveness 
 
 ==Mobile Device==
@@ -37,6 +39,8 @@ industry. This website designed with clean,structured, and semantic hierarcy. Ad
 
 ==Desktop Device==
 ![Desktop](assets/DESKTOPVIEW.png)
+
+----
 
 
 ## 🚀 Live Demo
