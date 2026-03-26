@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/contact.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+</head>
+<body>
+
+    <main class="container">
+
+        
+            <h1 title="Fill the form">Form Contact</h1>
+        
+        <form action="" class="form-action">
+        <fieldset id="Biodata">
+            <legend>Biodata</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Full Name" required>
+            
+            <label for="nick-name">Nick name</label>
+            <input type="text" id="nick-name" placeholder="Nick Name" required>
+     
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@gmail.com" required>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" placeholder="08xxxxxxx" required>
+        </fieldset>
+
+        <fieldset id="Purpose">
+            <legend>Choose your purpose</legend>
+            
+            <label for="website">
+                <span>Website Design</span>
+                <input type="radio" id="website" name="purpose" value="website design">
+            </label>
+
+            <label for="maintenance">
+                <span>Website Maintenance</span>
+                <input type="radio" id="maintenance" name="purpose" value="website maintenance">
+            </label> 
+
+            <label for="update">
+                <span>Update Database</span>
+                <input type="radio" id="update" name="purpose" value="update database">
+            </label>
+        </fieldset>
+
+        <fieldset id="text-area">
+            <legend>Your Messages</legend>
+            <textarea name="message" id="messages" placeholder="write here..." rows="18" cols="30"></textarea>
+        </fieldset>
+
+        <button type="submit" id="btn-submit">Submit Form</button>
+
+        <a href="../index.html">
+            <button id="home-button" type="button">Back to Home</button>
+        </a>
+        </form>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* color for container */
+  --bg-wrapper: #243533;
+  /* color for body */
+  --bg-body: #1a5535;
+  /* color for h1 */
+  --color-accent: #37b6ba;
+  /* color for button text  */
+  --color-text-main: #000000;
+  /* color text */
+  --color-text-secondary: #d9d9d9;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--color-text-secondary);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-wrapper);
+  margin: 50px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: var(--color-accent);
+  font-size: 32px;
+  margin-left: 50px;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.form-action {
+  margin: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  position: relative;
+}
+
+legend {
+  margin-left: 8px;
+  font-size: 16px;
+  padding: 0px 8px;
+}
+
+#Biodata,
+#text-area {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#Biodata input {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  width: 300px;
+}
+
+#Purpose {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+#Purpose label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#btn-submit {
+  position: absolute;
+  bottom: -40px;
+  right: 100px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+#btn-submit:hover {
+  transform: translateY(-5px);
+  background-color: var(--bg-wrapper);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-text-secondary);
+}
+
+#home-button {
+  position: absolute;
+  right: -1px;
+  bottom: -40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-weight: bold;
+}
+
+#home-button:hover {
+  transform: translateY(-5px);
+  background-color: var(--bg-wrapper);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-text-secondary);
+}
+
+/* ==================================== */
+/* Media Queries Start */
+
+@media (max-width: 575.98px) {
+  .container {
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .form-action {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  #Biodata input {
+    width: 100%;
+  }
+
+  #btn-submit,
+  #home-button {
+    position: static;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .container {
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-action {
+      grid-template-columns: 1fr;
+    }
+
+    #Biodata input {
+      width: 70%;
+    }
+
+    label {
+      font-size: 24px;
+    }
+
+    #btn-submit {
+      font-size: 16px;
+      position: static;
+      width: 100%;
+    }
+
+    #home-button {
+      font-size: 16px;
+      position: static;
+      width: 100%;
+      text-decoration: underline;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #home-button {
+      text-decoration: underline;
+    }
+
+}
