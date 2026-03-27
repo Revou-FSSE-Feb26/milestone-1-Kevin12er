@@ -81,7 +81,6 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 70px 80px;
-  /* background-color: #37b6ba; */
 }
 
 .about-text {
@@ -102,10 +101,6 @@ body {
 .main-desc {
   color: var(--color-text-secondary);
   font-size: 30px;
-}
-
-.img-cover {
-  max-width: 100%;
 }
 
 .img-cover img {
@@ -145,7 +140,7 @@ body {
 .project-title {
   font-size: 30px;
   color: var(--color-text-secondary);
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 figure img {
@@ -154,8 +149,10 @@ figure img {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.2s;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(55, 182, 186, 0.3);
 }
-
 
 figure img:hover {
   transform: translateY(-10px);
@@ -166,7 +163,7 @@ figure img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 .figure-box h4 {
@@ -190,9 +187,7 @@ figure img:hover {
   color: var(--color-accent);
 }
 
-#btn-project,
-#btn-project2,
-#btn-project3 {
+.btn-project {
   margin-top: 10px;
   padding: 7px 5px;
   border-radius: 5px;
@@ -201,9 +196,14 @@ figure img:hover {
   background-color: var(--color-accent);
   margin-right: 15px;
   transition: transform 0.2s;
+  margin-bottom: 10px;
 }
 
-
+.btn-project:hover {
+  transform: translateY(-5px);
+  background-color: var(--color-text-secondary);
+  color: var(--bg-wrapper);
+}
 
 /*=============== Media Queries (Tablet & Mobile) ===============*/
 
