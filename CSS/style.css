@@ -33,7 +33,7 @@ body {
   margin: 0 50px;
   border-radius: 10px;
   background-image:
-    linear-gradient(rgba(36, 53, 51, 0.8), rgba(36, 53, 51, 0.8)),
+    linear-gradient(rgba(36, 53, 51, 0.7), rgba(36, 53, 51, 0.9)),
     url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070");
   background-size: cover;
   background-position: center;
