@@ -19,6 +19,16 @@ industry. This website designed with clean,structured, and semantic hierarcy. Ad
 
 ---- 
 
+### Properties used in CSS3
+
+- Grid for two dimensions layout
+- Flex for one dimensions layout
+- Transform and translate(Y) for button hover
+- root for color consistency
+- Jakarta Plus Sans for typography
+
+
+
 ### Breakpoint for Responsiveness
 
 | Breakpoint | Device |
