@@ -6,9 +6,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css" />
 
-
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- AOS -->
 
     <!-- Google Fonts -->
@@ -29,7 +28,7 @@
           <h1 title="Kevin Langga">Portfolio</h1>
         </div>
 
-        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <input type="checkbox" id="menu-toggle" style="display: none" />
         <label for="menu-toggle" class="hamburger">&#9776;</label>
 
         <nav id="desktop-nav">
@@ -85,7 +84,7 @@
             </a>
           </article>
 
-          <figure class="img-cover" data-aos="fade-left">
+          <figure class="img-cover">
             <img src="images/img1.jpg" alt="Profile picture of Kevin Langga" />
           </figure>
         </section>
@@ -93,7 +92,7 @@
 
         <!-- Projects section start -->
         <section id="project">
-          <div class="project-logo">
+          <div class="project-logo" data-aos="fade-right" data-aos-delay="100">
             <h2 class="project-title">Projects</h2>
           </div>
 
@@ -173,14 +172,12 @@
       </main>
     </div>
 
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1000,
-        once: true, 
-        easing: 'ease-in-out',
+        once: true,
+        easing: "ease-in-out",
       });
     </script>
   </body>
