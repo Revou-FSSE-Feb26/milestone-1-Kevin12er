@@ -6,6 +6,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css" />
 
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +24,7 @@
   <body>
     <div class="container">
       <!-- Header Start -->
-      <header class="logo-nav">
+      <header class="logo-nav" data-aos="fade-down" data-aos-delay="100">
         <div class="logo">
           <h1 title="Kevin Langga">Portfolio</h1>
         </div>
@@ -47,7 +52,7 @@
       <!-- About me section Start -->
       <main class="content">
         <section id="about-wrapper">
-          <article class="about-me">
+          <article class="about-me" data-aos="fade-right">
             <span class="year">2026</span>
             <h2 class="main-logo">Kevin Langga</h2>
             <h3 class="main-desc">Fullstack Developer</h3>
@@ -80,7 +85,7 @@
             </a>
           </article>
 
-          <figure class="img-cover">
+          <figure class="img-cover" data-aos="fade-left">
             <img src="images/img1.jpg" alt="Profile picture of Kevin Langga" />
           </figure>
         </section>
@@ -93,7 +98,7 @@
           </div>
 
           <div class="project-box">
-            <article class="project1">
+            <article class="project1" data-aos="fade-up" data-aos-delay="100">
               <figure>
                 <img
                   src="images/lalaland1.png"
@@ -116,7 +121,7 @@
               </div>
             </article>
 
-            <article class="project2">
+            <article class="project2" data-aos="fade-up" data-aos-delay="100">
               <figure>
                 <img
                   src="images/donald.png"
@@ -139,7 +144,7 @@
               </div>
             </article>
 
-            <article class="project3">
+            <article class="project3" data-aos="fade-up" data-aos-delay="100">
               <figure>
                 <img
                   src="images/project3.png"
@@ -167,5 +172,16 @@
         </section>
       </main>
     </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true, 
+        easing: 'ease-in-out',
+      });
+    </script>
   </body>
 </html>
