@@ -34,7 +34,7 @@ body {
   border-radius: 10px;
   background-image:
     linear-gradient(rgba(36, 53, 51, 0.7), rgba(36, 53, 51, 0.9)),
-    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070");
+    url("../images/ses.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ figure img:hover {
 
   .project-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 20px 40px;
     gap: 30px;
   }
