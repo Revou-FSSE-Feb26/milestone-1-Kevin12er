@@ -323,6 +323,12 @@ figure img:hover {
     text-align: left;
   }
 
+  .emoticons {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+  }
+
   .img-cover img {
     width: 100%;
     height: 250px;
