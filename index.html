@@ -21,11 +21,15 @@
     <!-- Google Fonts -->
 
     <!-- Font Awesome -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
     <!-- Font Awesome -->
+
+
   </head>
 
   <body>
@@ -196,8 +200,8 @@
         <section class="container-contact" id="contact-section">
           <h1 title="Fill the form">Form Contact</h1>
 
-          <form action="" class="form-action">
-            <fieldset id="Biodata">
+          <form action="#" class="form-action">
+            <fieldset id="Biodata" data-aos="fade-right" data-aos-delay="100">
               <legend>Biodata</legend>
               <label for="name">Full Name</label>
               <input type="text" id="name" placeholder="Full Name" required />
@@ -227,7 +231,7 @@
               />
             </fieldset>
 
-            <fieldset id="Purpose">
+            <fieldset id="Purpose" data-aos="fade-up" data-aos-delay="100">
               <legend>Choose your purpose</legend>
 
               <label for="website">
@@ -261,7 +265,7 @@
               </label>
             </fieldset>
 
-            <fieldset id="text-area">
+            <fieldset id="text-area" data-aos="fade-left" data-aos-delay="100">
               <legend>Your Messages</legend>
               <textarea
                 name="message"
@@ -279,6 +283,9 @@
       </main>
     </div>
 
+
+
+    <!-- script data aos start -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -288,5 +295,7 @@
         easing: "ease-in-out",
       });
     </script>
+    <!-- script data aos end -->
+
   </body>
 </html>

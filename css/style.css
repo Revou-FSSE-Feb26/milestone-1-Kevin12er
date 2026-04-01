@@ -30,14 +30,13 @@ body {
 
 .container {
   background-color: var(--bg-wrapper);
-  margin: 0 50px;
-  border-radius: 10px;
   background-image:
     linear-gradient(rgba(36, 53, 51, 0.7), rgba(36, 53, 51, 0.9)),
     url("../images/ses.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hamburger {
@@ -56,18 +55,19 @@ body {
 
 /* Header Start */
 .logo-nav {
-  margin: 70px;
+  margin: 0 20px ;
   padding: 50px 10px;
-  color: var(--color-text-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+
 .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 70px;
   gap: 50px;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .about-text {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--color-text-secondary);
 }
 
@@ -115,8 +115,8 @@ body {
 }
 
 .img-cover img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -168,6 +168,7 @@ body {
 
 /* ------------------------------------------------- */
 
+
 .project-title {
   font-size: 30px;
   color: var(--color-text-secondary);
@@ -190,11 +191,11 @@ figure img:hover {
 }
 
 .project-box {
-  margin: 20px 80px;
+  margin: 20px 0 20px 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .figure-box h4 {
@@ -240,10 +241,7 @@ figure img:hover {
 
 /*Tablet view*/
 
-@media (max-width: 1023px) {
-  .container {
-    margin: 0 20px;
-  }
+@media (min-width: 770px) and (max-width: 1023px) {
 
   .hamburger {
     display: none;
@@ -266,10 +264,11 @@ figure img:hover {
     margin: 20px 40px;
   }
 
+
   .project-box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin: 0px 40px; */
     gap: 30px;
   }
 
@@ -283,10 +282,10 @@ figure img:hover {
 /*Mobile view*/
 
 @media (max-width: 575.98px) {
-  .container {
+  /* .container {
     margin: 0px;
     border-radius: 0px;
-  }
+  } */
 
   .hamburger {
     display: block;
