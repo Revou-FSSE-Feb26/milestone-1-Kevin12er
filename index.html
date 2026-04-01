@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -99,9 +100,7 @@
             </a>
 
             <a
-              href="pages/contact.html"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact-section"
             >
               <button id="contact">Contact Form</button>
             </a>
@@ -139,7 +138,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="btn-project">See the project</button>
+                  <button class="btn-project btn-hover">See the project</button>
                 </a>
               </div>
             </article>
@@ -162,7 +161,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="btn-project">See the project</button>
+                  <button class="btn-project btn-hover">See the project</button>
                 </a>
               </div>
             </article>
@@ -185,14 +184,98 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="btn-project" class="btn-hover">
-                    See the project
-                  </button>
+                  <button class="btn-project btn-hover">See the project</button>
                 </a>
               </div>
             </article>
           </div>
         </section>
+
+        <!-- Contact Form Start -->
+
+        <section class="container-contact" id="contact-section">
+          <h1 title="Fill the form">Form Contact</h1>
+
+          <form action="" class="form-action">
+            <fieldset id="Biodata">
+              <legend>Biodata</legend>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Full Name" required />
+
+              <label for="nick-name">Nick name</label>
+              <input
+                type="text"
+                id="nick-name"
+                placeholder="Nick Name"
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@gmail.com"
+                required
+              />
+
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="tel"
+                id="phone-number"
+                placeholder="08xxxxxxx"
+                required
+              />
+            </fieldset>
+
+            <fieldset id="Purpose">
+              <legend>Choose your purpose</legend>
+
+              <label for="website">
+                <span>Website Design</span>
+                <input
+                  type="radio"
+                  id="website"
+                  name="purpose"
+                  value="website design"
+                />
+              </label>
+
+              <label for="maintenance">
+                <span>Website Maintenance</span>
+                <input
+                  type="radio"
+                  id="maintenance"
+                  name="purpose"
+                  value="website maintenance"
+                />
+              </label>
+
+              <label for="update">
+                <span>Update Database</span>
+                <input
+                  type="radio"
+                  id="update"
+                  name="purpose"
+                  value="update database"
+                />
+              </label>
+            </fieldset>
+
+            <fieldset id="text-area">
+              <legend>Your Messages</legend>
+              <textarea
+                name="message"
+                id="messages"
+                placeholder="write here..."
+                rows="18"
+                cols="30"
+              ></textarea>
+            </fieldset>
+            <button type="submit" id="btn-submit">Submit Form</button>
+          </form>
+        </section>
+
+        <!-- Contact form end -->
       </main>
     </div>
 
