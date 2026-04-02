@@ -200,86 +200,52 @@
         <!-- Contact Form Start -->
 
         <section class="container-contact" id="contact-section">
-          <h1 title="Fill the form">Form Contact</h1>
+        <h1 title="Fill the form">Form Contact</h1>
 
-          <form action="#" class="form-action">
-            <fieldset id="Biodata" data-aos="fade-right" data-aos-delay="100">
-              <legend>Biodata</legend>
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="Full Name" required />
+      <form action="https://formspree.io/f/xbdpajdw" method="POST" class="form-action">
+      <fieldset id="Biodata" data-aos="fade-right" data-aos-delay="100">
+      <legend>Biodata</legend>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="full_name" placeholder="Full Name" required />
 
-              <label for="nick-name">Nick name</label>
-              <input
-                type="text"
-                id="nick-name"
-                placeholder="Nick Name"
-                required
-              />
+      <label for="nick-name">Nick name</label>
+      <input type="text" id="nick-name" name="nick_name" placeholder="Nick Name" required />
 
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="email@gmail.com"
-                required
-              />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@gmail.com" required />
 
-              <label for="phone-number">Phone Number</label>
-              <input
-                type="tel"
-                id="phone-number"
-                placeholder="08xxxxxxx"
-                required
-              />
-            </fieldset>
+      <label for="phone-number">Phone Number</label>
+      <input type="tel" id="phone-number" name="phone" placeholder="08xxxxxxx" required />
+    </fieldset>
 
-            <fieldset id="Purpose" data-aos="fade-up" data-aos-delay="100">
-              <legend>Choose your purpose</legend>
+    <fieldset id="Purpose" data-aos="fade-up" data-aos-delay="100">
+      <legend>Choose your purpose</legend>
 
-              <label for="website">
-                <span>Website Design</span>
-                <input
-                  type="radio"
-                  id="website"
-                  name="purpose"
-                  value="website design"
-                />
-              </label>
+      <label for="website">
+        <span>Website Design</span>
+        <input type="radio" id="website" name="purpose" value="website design" />
+      </label>
 
-              <label for="maintenance">
-                <span>Website Maintenance</span>
-                <input
-                  type="radio"
-                  id="maintenance"
-                  name="purpose"
-                  value="website maintenance"
-                />
-              </label>
+      <label for="maintenance">
+        <span>Website Maintenance</span>
+        <input type="radio" id="maintenance" name="purpose" value="website maintenance" />
+      </label>
 
-              <label for="update">
-                <span>Update Database</span>
-                <input
-                  type="radio"
-                  id="update"
-                  name="purpose"
-                  value="update database"
-                />
-              </label>
-            </fieldset>
+      <label for="update">
+        <span>Update Database</span>
+        <input type="radio" id="update" name="purpose" value="update database" />
+      </label>
+    </fieldset>
 
-            <fieldset id="text-area" data-aos="fade-left" data-aos-delay="100">
-              <legend>Your Messages</legend>
-              <textarea
-                name="message"
-                id="messages"
-                placeholder="write here..."
-                rows="18"
-                cols="30"
-              ></textarea>
-            </fieldset>
-            <button type="submit" id="btn-submit">Submit Form</button>
-          </form>
-        </section>
+    <fieldset id="text-area" data-aos="fade-left" data-aos-delay="100">
+      <legend>Your Messages</legend>
+      <textarea name="message" id="messages" placeholder="write here..." rows="18" cols="30"></textarea>
+    </fieldset>
+
+    <button type="submit" id="btn-submit">Submit Form</button>
+  </form>
+</section>
 
         <!-- Contact form end -->
       </main>
