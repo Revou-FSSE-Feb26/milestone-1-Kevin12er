@@ -10,6 +10,18 @@ industry. This website designed with clean,structured, and semantic hierarcy. Ad
 
 ----
 
+## Features Implementation
+
+| No | Page | Features |
+| --- | --- | --- |
+| 1 | Global Page | Responsive Design using media queries, Scroll Animation (AOS), Global Typography using Jakarta Plus Sans |
+| 2 | Hero Section | Identity display, quick navigations button (Download resume and navigation button to contact form) |
+| 3 | Projects Section | Scroll Animation (AOS), Project Showcase, Hover effect for the image |
+| 4 | Form Contact Section | Well implementation of fieldset and legend, Form validation, Formspree implementation to make the visitor can send messages through form section, Radio button for purpose |
+
+----
+
+
 ## Technologies used
 
 - HTML5
