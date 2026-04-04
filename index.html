@@ -80,23 +80,24 @@
 
             <!-- Font Awesome Start -->
             <div class="emoticons">
-              <article class="emoticon">
+              <div class="emoticon">
                 <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
-              </article>
+              </div>
 
-              <article class="emoticon">
+              <div class="emoticon">
                 <a
                   href="https://www.instagram.com/eatbiscuits9/"
                   target="_blank" rel="">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-              </article>
+              </div>
 
-              <article class="emoticon">
+              <div class="emoticon">
                 <a href="https://www.linkedin.com/in/kevin-langga-032b913b1/"
                 target="_blank" rel=""><i class="fa-brands fa-linkedin"></i></a>
-              </article>
+              </div>
             </div>
+            <!-- Font Awesome ends -->
 
             <a
               href="assets/Kevin%20Resume.pdf"
@@ -200,7 +201,7 @@
         <!-- Contact Form Start -->
 
         <section class="container-contact" id="contact-section">
-        <h1 title="Fill the form">Form Contact</h1>
+        <h2 title="Fill the form">Form Contact</h2>
 
       <form action="https://formspree.io/f/xbdpajdw" method="POST" class="form-action">
       <fieldset id="Biodata" data-aos="fade-right" data-aos-delay="100">
@@ -224,25 +225,25 @@
 
       <label for="website">
         <span>Website Design</span>
-        <input type="radio" id="website" name="purpose" value="website design" />
+        <input type="radio" id="website" name="purpose" value="website design" required/>
       </label>
 
       <label for="maintenance">
         <span>Website Maintenance</span>
-        <input type="radio" id="maintenance" name="purpose" value="website maintenance" />
+        <input type="radio" id="maintenance" name="purpose" value="website maintenance" required/>
       </label>
 
       <label for="update">
         <span>Update Database</span>
-        <input type="radio" id="update" name="purpose" value="update database" />
+        <input type="radio" id="update" name="purpose" value="update database" required/>
       </label>
     </fieldset>
 
     <fieldset id="text-area" data-aos="fade-left" data-aos-delay="100">
       <legend>Your Messages</legend>
-      <textarea name="message" id="messages" placeholder="write here..." rows="18" cols="30"></textarea>
+      <label for="messages"></label>
+      <textarea name="message" id="messages" placeholder="write here..." rows="18" cols="30" required></textarea>
     </fieldset>
-
     <button type="submit" id="btn-submit">Submit Form</button>
   </form>
 </section>
