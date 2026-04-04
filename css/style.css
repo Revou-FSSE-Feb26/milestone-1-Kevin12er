@@ -247,10 +247,12 @@ figure img:hover {
   background-color: var(--color-accent);
   transition: transform 0.2s;
   font-weight: bold;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+  position: fixed; 
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;   
 }
+
 
 .back-top::after {
   content: "🠉";
